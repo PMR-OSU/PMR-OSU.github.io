@@ -87,26 +87,70 @@ nav ul li a {
 }
 
 .feature-card {
-    max-width: 250px;
+    position: relative;
+    max-width: 300px;
     background-color: #f3f3f3;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    padding: 1rem;
+    padding: 0;
     width: calc(50% - 1rem);
     text-align: center;
     margin-bottom: 1rem;
+    overflow: hidden;
 }
 
-.feature-card img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 1rem;
+.feature-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 1);
+    transition: all 0.3s;
+    max-height: 25%;
+}
+
+.feature-card:hover .feature-content {
+    max-height: 100%;
+    /* transform: translateY(-1%); */
+}
+
+.features h2 {
+    margin-top: 17rem;
+}
+
+.features .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.features .feature img {
+    max-width: 100px;
+    margin-right: 1rem;
+    background-size: cover;
 }
 
 .feature-card h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
+
+.feature-content p {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.feature-card:hover .feature-content p {
+    opacity: 1;
+}
+
 @media (min-width: 768px) {
     .hero {
         padding: 5rem;
@@ -224,19 +268,8 @@ nav ul li a {
 .case-study p{
     padding-bottom: 2rem;
 }
-.features h2{
-    margin-top: 17rem;
-}
-.features .feature {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
 
-.features .feature img {
-    max-width: 100px;
-    margin-right: 1rem;
-}
+
 .robotInfo{
     padding-top: 2rem;
     text-align: center;
