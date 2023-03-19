@@ -19,6 +19,12 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
 }
+ul h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--primary-color);
+}
 /* Color scheme */
 :root {
     --primary-color: #3f51b5;
