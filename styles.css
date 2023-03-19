@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.benefit-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+}
+
+.benefit-card {
+    max-width: 250px;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(50% - 1rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.benefit-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.feature-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.feature-card {
+    max-width: 250px;
+    background-color: #f3f3f3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(50% - 1rem);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+    .hero {
+        padding: 5rem;
+      }
+    
+      .hero-content {
+        margin-bottom: 2rem;
+      }
+    
+      .hero-image {
+        margin-bottom: 2rem;
+      }
+    .benefit-card {
+        width: calc(25% - 1rem);
+    }
+    .feature-card {
+        width: calc(50% - 1rem);
+    }
+    .team-member li {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) {
+    .feature-card {
+        width: calc(25% - 1rem);
+    }
+}
+
+.hero {
+    position: relative;
+    height: 40rem;
+    background-image: url("hero-background.gif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content,
+  .hero-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-content {
+    z-index: 1;
+  }
+  
+  .hero-image img {
+    padding-top: 4rem;
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+.hero h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+.hero p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+.hero-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    margin-top: 40rem;
+    justify-content: center;
+    width: 500px;
+    height: 600px;
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.features, .benefits, .contact, .case-study{
+    padding: 2rem;
+
+}
+
+.features h2, .benefits h2, .contact h2, .case-study h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+       
+}
+.case-study {
+    text-align: center;
+}
+.case-study p{
+    padding-bottom: 2rem;
+}
+.features h2{
+    margin-top: 17rem;
+}
+.features .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.features .feature img {
+    max-width: 100px;
+    margin-right: 1rem;
+}
+.robotInfo{
+    padding-top: 2rem;
+    text-align: center;
+}
+.benefits ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
+.contact form {
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+footer ul li {
+    margin-left: 1rem;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.contact {
+    background-color: #f3f3f3;
+    padding: 2rem 1rem;
+}
+
+
+
+.contact-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact-content p{
+    padding-bottom: 2rem;
+}
+.team-members,
+.sponsor-members {
+    width: auto;
+    max-width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.team-members li,
+.sponsor-members li {
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 1rem;
+    width: calc(50% - 1rem);
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-members a,
+.sponsor-members a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Add this to the existing .team-members li style */
+.contact {
+    background-color: #f3f3f3;
+    padding: 2rem 1rem;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.email-text {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.team-members li:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.team-members li:hover .email-text {
+    opacity: 1;
+}
+
+.team-members li p {
+    padding-top: 15px;
+}
+.team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit:contain;
+    display: block;
+    transition: opacity 0.3s;
+}
+
+.peace-of-mind-icon {
+    background-image: url("heart-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .peace-of-mind-design {
+    background-color: #F2F2F2;
+    /* border: 1px solid #D9D9D9; */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .peace-of-mind-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .cost-effective-graph {
+    background-color: #F2F2F2;
+    /* border: 1px solid #D9D9D9; */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cost-effective-chart {
+    background-image: url("cost-effective-chart.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    margin-bottom: 10px;
+  }
+  
+  .cost-effective-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+  }
+  .independence-icon {
+    background-image: url("independence-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+  }
+  
+  .independence-design {
+    background-color: #F2F2F2;
+    /* border: 1px solid #D9D9D9; */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .independence-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: blue;
+  }
+  .customizable-icon {
+    background-image: url("gear-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -40px;
+    width: 120px;
+    height: 120px;
+    margin-top: -20px
+  }
+  
+  .customizable-design {
+    background-color: #F2F2F2;
+    /* border: 1px solid #D9D9D9; */
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .customizable-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    margin-top: 10px;
+  }
+  
