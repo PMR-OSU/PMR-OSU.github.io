@@ -188,7 +188,7 @@ nav ul li a:hover {
 }
 
 .features h2 {
-    margin-top: 17rem;
+    margin-top: 19rem;
 }
 .features .feature {
     display: flex;
@@ -271,7 +271,7 @@ nav ul li a:hover {
   }
   
   .hero-image img {
-    padding-top: 4rem;
+    padding-top: 6rem;
     width: 200px;
     height: 300px;
     display: block;
@@ -502,7 +502,8 @@ footer ul li a {
 .team-member img {
     width: 100%;
     height: 300px;
-    object-fit:contain;
+    padding-bottom: 1rem;
+    object-fit:cover;
     display: block;
     transition: opacity 0.3s;
 }
